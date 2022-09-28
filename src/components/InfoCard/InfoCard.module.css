@@ -1,0 +1,45 @@
+/* Desktop Styling */
+.cardContainer {
+    background-color: #f0efec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25vw;
+    height: 25vw;
+    margin: 1%;
+}
+.cardImg {
+    width: 15%;
+}
+.cardText {
+    margin-top: 2%;
+    color: #13294b;
+}
+
+@media screen and (max-width: 768px) {
+    .cardImg {
+        width: 25%;
+    }
+    .cardContainer {
+        width: 30vw;
+        height: 30vw;
+        margin: 2%;
+    }
+    .cardText {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cardContainer {
+        width: 50vw;
+        height: 50vw;
+        margin: 3% 0;
+    }
+    .cardText {
+        font-size: 12px;
+    }
+}
+
+

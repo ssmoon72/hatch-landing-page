@@ -1,0 +1,27 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.headlineContainer {
+    margin-top: 3%;
+}
+
+.headlineText {
+    text-align: center;
+    color: #13294b;
+}
+
+.infoCardContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    margin: 1% 3% 5%;
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 425px){
+    .infoCardContainer {
+        flex-direction: column;
+    }
+}
