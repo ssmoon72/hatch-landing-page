@@ -12,11 +12,20 @@ import heroImage from '../assets/hero-image.png'
 
 
 const LandingPage = () => {
-    const cardText = {
-        card1: "Card Text 1",
-        card2: "Card Text 2",
-        card3: "Card Text 3"
-    }
+    const cardInfo = [
+      {
+        text: "This Is Card 1",
+        image: wavyLines
+      },
+      {
+        text: "This Is Card 2",
+        image: sunshineHeart
+      },
+      {
+        text: "This Is Card 3",
+        image: sunriseAlarm
+      }
+    ]
     const handleButtonClick = () => {
       console.log("You clicked the button!");
   }
@@ -31,18 +40,17 @@ const LandingPage = () => {
                 <h4 className={styles.headlineText}> Your Heading Here </h4>
             </div>
             <div className={styles.infoCardContainer}>
-                <InfoCard
-                    cardImg={wavyLines}
-                    cardText = {cardText.card1}
-                />
-                <InfoCard
-                    cardImg={sunshineHeart}
-                    cardText = {cardText.card2}
-                />
-                <InfoCard
-                    cardImg={sunriseAlarm}
-                    cardText = {cardText.card3}
-                />
+                {
+                  cardInfo.map((card) => {
+                    return (
+                      <InfoCard
+                        key={card.text} 
+                        cardImg={card.image}
+                        cardText={card.text}
+                      />
+                    )
+                  })
+                }
             </div>
         </div>
     )
