@@ -8,6 +8,8 @@ import InfoCard from '../components/InfoCard/InfoCard'
 import wavyLines from '../assets/wavy-lines-icon.svg';
 import sunshineHeart from '../assets/sunshine-heart-icon.svg';
 import sunriseAlarm from '../assets/sunrise-alarm.svg';
+import heroImage from '../assets/hero-image.png'
+
 
 const LandingPage = () => {
     const cardText = {
@@ -15,10 +17,16 @@ const LandingPage = () => {
         card2: "Card Text 2",
         card3: "Card Text 3"
     }
+    const handleButtonClick = () => {
+      console.log("You clicked the button!");
+  }
     return (
         <div>
             <NavBar />
-            <HeroBanner />
+            <HeroBanner
+              heroImg={heroImage}
+              handleClick={handleButtonClick} 
+            />
             <div className={styles.headlineContainer}>
                 <h4 className={styles.headlineText}> Your Heading Here </h4>
             </div>

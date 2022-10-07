@@ -14,10 +14,6 @@
 .button:hover {
   background-color: #334f72 !important;
 }
-/* .imageContainer {
-  position: relative;
-  width: 100%;
-} */
 .imageContainer {
     box-sizing: border-box;
     display: block;
@@ -35,9 +31,6 @@
     bottom: 0;
     right: 0;
 }
-/* .heroImage {
-  width: 100%;
-} */
 .heroImage {
     position: absolute;
     top: 0;
